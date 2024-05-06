@@ -7,10 +7,6 @@ terraform {
   }
 }
 
-variable tf_profile {
-  type  = string
-}
-
 
 provider "aws" {
   profile = var.tf_profile
