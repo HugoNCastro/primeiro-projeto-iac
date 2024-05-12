@@ -21,7 +21,7 @@ module "cloudfront" {
 
 module "sqs" {
   source = "terraform-aws-modules/sqs/aws"
-  name = "hnc-devops-sqs"
+  name   = "hnc-devops-sqs"
 
   create_dlq = true
 
