@@ -16,7 +16,7 @@ resource "aws_s3_bucket_website_configuration" "bucket" {
     key = "index.html"
   }
 
-  dependes_on = {
+  depends_on = [
     aws_s3_bucket.bucket
-  }
+  ] 
 }
